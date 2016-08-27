@@ -5,7 +5,7 @@ var Nav = React.createClass({
 	onSearch: function (e) {
 		e.preventDefault();
 
-		var location = this.refs.search.value.trim();
+		var location = this.refs.search.value;
 		var encodedLocation = encodeURIComponent(location);
 
 		if (location.length > 0) {
