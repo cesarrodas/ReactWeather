@@ -2,8 +2,6 @@ var axios = require('axios');
 
 const OPEN_WEATHER_MAP_URL = 'http://api.openweathermap.org/data/2.5/weather?&units=imperial&appid=5ff25fbbab9159e9c404d8172c519d34';
 
-//http://api.openweathermap.org/data/2.5/weather?q=London,uk&units=imperial&appid=5ff25fbbab9159e9c404d8172c519d34
-
 module.exports = {
 	getTemp: function (location){
 		var encodedLocation = encodeURIComponent(location);
